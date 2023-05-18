@@ -35,14 +35,13 @@ class Overworld extends Phaser.Scene {
                 end: 1
             })
         })
-        this.slime.play('jig')
+        this.slime.play('jiggle')
 
         this.slime.body.setCollideWorldBounds(true)
 
         // enable collision
         terrainLayer.setCollisionByProperty({ collides: true })
         treeLayer.setCollisionByProperty({ collides: true })
-
         this.physics.add.collider(this.slime, terrainLayer)
         this.physics.add.collider(this.slime, treeLayer)
 
