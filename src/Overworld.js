@@ -1,8 +1,6 @@
 class Overworld extends Phaser.Scene {
     constructor() {
         super({key: 'overworldScene'})
-
-        this.VEL = 100;
     }
 
     preload(){
